@@ -1,4 +1,4 @@
-```markdown
+[README_EN.md](https://github.com/user-attachments/files/28737914/README_EN.md)
 # FaceDetectCamera for XIAO ESP32S3 Sense
 
 This is a web camera application that performs face detection using MediaPipe with the built-in camera of the XIAO ESP32S3 Sense. 
@@ -51,17 +51,16 @@ Since this project utilizes the built-in camera, you generally do not need to wo
 ## Initial Setup Instructions
 
 1. Flash the sketch to your board.
-2. Open the Serial Monitor (Set传递速率/baud rate to `115200 bps`).
+2. Open the Serial Monitor (Set the baud rate to `115200 bps`).
 3. If you see the following output, the device has successfully started in Setup Mode:
 
-```
-
+```text
 Access Point started. Connect to:
 SSID: Camera-Setup
 Password: setup1234
-Config URL: [http://192.168.4.1/](http://192.168.4.1/)
-
+Config URL: http://192.168.4.1/
 ```
+
 4. Connect to the Wi-Fi network `Camera-Setup` from your PC or smartphone (Password: `setup1234`).
 5. Open `http://192.168.4.1/` in your web browser.
 6. Enter your Wi-Fi SSID, Password, and Transmission Interval (in seconds), then click "Save and Reboot".
@@ -104,7 +103,6 @@ When a face is detected, the following JSON payload is output to the serial cons
  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
 ]
 }
-
 ```
 
 ### Field Descriptions
@@ -136,7 +134,6 @@ if 9 <= data["time"]["hour"] <= 18:
 
 # Aggregate data by date
 date_key = f"{data['time']['year']}-{data['time']['month']:02d}-{data['time']['day']:02d}"
-
 ```
 
 The `iso` field contains the timestamp in ISO 8601 format, allowing it to be easily parsed by standard date-time libraries.
@@ -178,14 +175,13 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
 ```
 
 ## License
@@ -216,9 +212,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-```
-
-```
-
 ```
