@@ -19,7 +19,7 @@ The ESP32 operates as a camera server and streams video to a web browser. Face d
 
 - **Serial Output Control**
   - In normal operation mode (when connected to Wi-Fi), system logs are suppressed and not output to the serial console.
-  - Information is output to the serial console only during setup mode (AP mode).
+  - System Information is output to the serial console only during setup mode (AP mode).
 
 ## Requirements
 
