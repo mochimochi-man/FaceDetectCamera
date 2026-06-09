@@ -11,15 +11,15 @@ The ESP32 operates as a camera server and streams video to a web browser. Face d
 - **Wi-Fi Setup via Web Browser**
   - On the first boot or when Wi-Fi settings are not saved, the device automatically starts in Access Point (AP) mode.
   - Connect to the SSID `Camera-Setup` to configure Wi-Fi settings through a web browser.
-  - After saving the settings, the device automatically reboots and switches to Wi-Fi connection mode.
+  - After saving the settings, the device automatically reboots and switches to camera mode(with Wi-Fi).
 
 - **MediaPipe Face Detection**
   - Runs MediaPipe Face Detection on the browser side.
   - Outputs the detected face positions, scores, and thumbnail images via serial communication in JSON format.
 
 - **Serial Output Control**
-  - In normal operation mode (when connected to Wi-Fi), system logs are suppressed and not output to the serial console.
-  - System Information is output to the serial console only during setup mode (AP mode).
+  - In setup mode (AP mode), JSON logs are suppressed and not output to the serial console.
+  - JSON logs is output to the serial console only during camera mode.
 
 ## Requirements
 
